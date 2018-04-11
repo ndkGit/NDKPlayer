@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ndk" translatesAutoresizingMaskIntoConstraints="NO" id="tbl-gK-nmG">
+                                <rect key="frame" x="96" y="306.5" width="94" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="W01-O9-LhV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Start" translatesAutoresizingMaskIntoConstraints="NO" id="ito-Ra-5Ah">
+                                <rect key="frame" x="26" y="303.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Jyz-jN-qkQ"/>
+                                    <constraint firstAttribute="width" constant="60" id="Pw6-l6-GOv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="tDC-qF-ofr">
+                                <rect key="frame" x="190" y="296.5" width="140" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="CIa-xY-NCh"/>
+                                    <constraint firstAttribute="height" constant="55" id="Gdd-kV-8pP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="tDC-qF-ofr" secondAttribute="trailing" constant="29" id="DKJ-2Z-qfg"/>
+                            <constraint firstItem="tbl-gK-nmG" firstAttribute="centerY" secondItem="ito-Ra-5Ah" secondAttribute="centerY" id="Gx6-74-n43"/>
+                            <constraint firstItem="tDC-qF-ofr" firstAttribute="centerY" secondItem="ito-Ra-5Ah" secondAttribute="centerY" constant="-9" id="Jtj-h6-37t"/>
+                            <constraint firstItem="tbl-gK-nmG" firstAttribute="leading" secondItem="ito-Ra-5Ah" secondAttribute="trailing" constant="10" id="VBG-sg-Iuo"/>
+                            <constraint firstItem="tDC-qF-ofr" firstAttribute="leading" secondItem="tbl-gK-nmG" secondAttribute="trailing" id="VWl-S3-ChZ"/>
+                            <constraint firstItem="ito-Ra-5Ah" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Ykf-EZ-ICa"/>
+                            <constraint firstItem="ito-Ra-5Ah" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="10" id="hCl-bl-emP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Start" width="72" height="72"/>
+        <image name="ndk" width="424" height="186"/>
+        <image name="player" width="658" height="208"/>
+    </resources>
+</document>

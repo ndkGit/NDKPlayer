@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchSceenVC">
+            <connections>
+                <outlet property="launchProgress" destination="NcN-tp-Km5" id="hDl-Xp-KTM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="FWQ-uq-cd9">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ndk" translatesAutoresizingMaskIntoConstraints="NO" id="8bZ-Ku-zc3">
+                    <rect key="frame" x="88" y="306.5" width="110" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="vJq-tX-JaL"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Start" translatesAutoresizingMaskIntoConstraints="NO" id="TiY-nj-MVF">
+                    <rect key="frame" x="18" y="303.5" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="sNt-0l-Cen"/>
+                        <constraint firstAttribute="height" constant="60" id="xts-el-pDZ"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="qSv-ES-g3n">
+                    <rect key="frame" x="198" y="296.5" width="140" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="ghP-Jb-DmH"/>
+                        <constraint firstAttribute="height" constant="55" id="vBO-Y8-mFE"/>
+                    </constraints>
+                </imageView>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="NcN-tp-Km5">
+                    <rect key="frame" x="104" y="421" width="167" height="3"/>
+                    <color key="tintColor" red="1" green="0.36470588240000001" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="Hkj-sa-dIG"/>
+                    </constraints>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TiY-nj-MVF" firstAttribute="leading" secondItem="FWQ-uq-cd9" secondAttribute="leadingMargin" constant="10" id="0GY-gi-jsu"/>
+                <constraint firstItem="NcN-tp-Km5" firstAttribute="leading" secondItem="FWQ-uq-cd9" secondAttribute="leadingMargin" constant="96" id="39x-FQ-DoX"/>
+                <constraint firstItem="qSv-ES-g3n" firstAttribute="centerY" secondItem="TiY-nj-MVF" secondAttribute="centerY" constant="-9" id="Gsm-BR-Kzm"/>
+                <constraint firstItem="qSv-ES-g3n" firstAttribute="leading" secondItem="8bZ-Ku-zc3" secondAttribute="trailing" id="U7x-t8-Eha"/>
+                <constraint firstItem="TiY-nj-MVF" firstAttribute="centerY" secondItem="FWQ-uq-cd9" secondAttribute="centerY" id="hM0-WR-JIF"/>
+                <constraint firstItem="8bZ-Ku-zc3" firstAttribute="centerY" secondItem="TiY-nj-MVF" secondAttribute="centerY" id="oED-Ls-CA5"/>
+                <constraint firstAttribute="trailingMargin" secondItem="qSv-ES-g3n" secondAttribute="trailing" constant="29" id="tzj-WP-A48"/>
+                <constraint firstItem="NcN-tp-Km5" firstAttribute="top" secondItem="TiY-nj-MVF" secondAttribute="bottom" constant="57.5" id="wuX-sT-8Jj"/>
+                <constraint firstAttribute="trailingMargin" secondItem="NcN-tp-Km5" secondAttribute="trailing" constant="96" id="xVs-g8-l6Z"/>
+                <constraint firstItem="8bZ-Ku-zc3" firstAttribute="leading" secondItem="TiY-nj-MVF" secondAttribute="trailing" constant="10" id="zpe-qb-AhU"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Start" width="72" height="72"/>
+        <image name="ndk" width="424" height="186"/>
+        <image name="player" width="658" height="208"/>
+    </resources>
+</document>

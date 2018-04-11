@@ -1,0 +1,9 @@
+platform:ios,'8.0'
+
+target "VedioTest" do
+pod 'Masonry'
+pod ‘SDAutoLayout’
+pod 'SDWebImage'
+pod 'ZFDownload'
+end
+

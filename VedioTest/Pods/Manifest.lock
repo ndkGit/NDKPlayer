@@ -1,0 +1,40 @@
+PODS:
+  - ASIHTTPRequest (1.8.2):
+    - ASIHTTPRequest/ASIWebPageRequest (= 1.8.2)
+    - ASIHTTPRequest/CloudFiles (= 1.8.2)
+    - ASIHTTPRequest/Core (= 1.8.2)
+    - ASIHTTPRequest/S3 (= 1.8.2)
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/CloudFiles (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/Core (1.8.2):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.2):
+    - ASIHTTPRequest/Core
+  - Masonry (1.0.2)
+  - Reachability (3.2)
+  - SDAutoLayout (2.1.8)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - ZFDownload (1.0.2):
+    - ASIHTTPRequest
+
+DEPENDENCIES:
+  - Masonry
+  - SDAutoLayout
+  - SDWebImage
+  - ZFDownload
+
+SPEC CHECKSUMS:
+  ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDAutoLayout: 5a4b48d6b8a5172ae8d088d2879e40dd795e6251
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  ZFDownload: a52f94ebb080833b8a8ceb19a409f2941343fe7f
+
+PODFILE CHECKSUM: 27f141b845bda0e41c9efdc81868ea40c20b7c09
+
+COCOAPODS: 1.2.0
